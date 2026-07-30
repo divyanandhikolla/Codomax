@@ -1,0 +1,139 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background-color:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+header p{
+    margin-bottom:15px;
+}
+
+/* Navigation */
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    margin:0 10px;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Sections */
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+/* Paragraph */
+p{
+    margin-bottom:10px;
+}
+
+/* Skills List */
+ul{
+    margin-left:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+table, th, td{
+    border:1px solid #ccc;
+}
+
+th{
+    background-color:#0d6efd;
+    color:white;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+}
+
+/* Form */
+form{
+    margin-top:10px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+input[type="reset"]{
+    background-color:#0d6efd;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background-color:#084298;
+}
+
+/* Footer */
+footer{
+    background-color:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
