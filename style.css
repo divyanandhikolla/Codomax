@@ -1,36 +1,54 @@
-/* Reset */
+/* ===========================
+   RESET
+=========================== */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-/* Body */
+html{
+    scroll-behavior:smooth;
+}
+
+/* ===========================
+   BODY
+=========================== */
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#f4f4f4;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
     color:#333;
     line-height:1.6;
 }
 
-/* Header */
+/* ===========================
+   HEADER
+=========================== */
 header{
-    background-color:#0d6efd;
+    background:#0d6efd;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:15px;
 }
 
 header h1{
-    margin-bottom:10px;
+    margin-bottom:8px;
+    font-size:36px;
 }
 
 header p{
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
-/* Navigation */
+/* ===========================
+   NAVIGATION
+=========================== */
 nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
     margin-top:10px;
 }
 
@@ -38,34 +56,64 @@ nav a{
     text-decoration:none;
     color:white;
     font-weight:bold;
-    margin:0 10px;
+    padding:8px 15px;
+    transition:0.3s;
 }
 
 nav a:hover{
     color:yellow;
 }
 
-/* Sections */
+/* ===========================
+   SECTIONS
+=========================== */
 section{
-    background:white;
-    margin:20px;
+    width:90%;
+    max-width:1200px;
+    margin:20px auto;
     padding:20px;
+    background:white;
     border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Headings */
+/* ===========================
+   HERO
+=========================== */
+#hero{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
 h2{
     color:#0d6efd;
     margin-bottom:10px;
 }
 
-/* Paragraph */
 p{
     margin-bottom:10px;
 }
 
-/* Skills List */
+/* ===========================
+   IMAGES
+=========================== */
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:auto;
+    border-radius:8px;
+}
+
+/* ===========================
+   LIST
+=========================== */
 ul{
     margin-left:20px;
 }
@@ -74,28 +122,58 @@ li{
     margin-bottom:8px;
 }
 
-/* Table */
+/* ===========================
+   SKILLS GRID
+=========================== */
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+
+.skill{
+    background:#0d6efd;
+    color:white;
+    padding:12px;
+    text-align:center;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.skill:hover{
+    background:#084298;
+    transform:translateY(-3px);
+}
+
+/* ===========================
+   TABLE
+=========================== */
 table{
     width:100%;
     border-collapse:collapse;
-    margin-top:10px;
+    overflow-x:auto;
+    display:block;
 }
 
-table, th, td{
+table,th,td{
     border:1px solid #ccc;
 }
 
 th{
-    background-color:#0d6efd;
+    background:#0d6efd;
     color:white;
 }
 
-th, td{
+th,td{
     padding:10px;
     text-align:center;
 }
 
-/* Form */
+/* ===========================
+   FORM
+=========================== */
 form{
     margin-top:10px;
 }
@@ -108,85 +186,83 @@ textarea{
     margin-bottom:15px;
     border:1px solid #ccc;
     border-radius:5px;
+    font-size:16px;
 }
 
-/* Buttons */
+textarea{
+    resize:vertical;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
 button,
 input[type="submit"],
 input[type="reset"]{
-    background-color:#0d6efd;
+    background:#0d6efd;
     color:white;
     border:none;
     padding:10px 20px;
     border-radius:5px;
     cursor:pointer;
-    margin-right:10px;
+    transition:0.3s;
 }
 
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover{
-    background-color:#084298;
+    background:#084298;
 }
 
-/* Footer */
+/* ===========================
+   FOOTER
+=========================== */
 footer{
-    background-color:#0d6efd;
+    background:#0d6efd;
     color:white;
     text-align:center;
     padding:15px;
     margin-top:20px;
 }
 
-/* Navigation using Flexbox */
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
+/* ===========================
+   DESKTOP
+=========================== */
+@media (min-width:1024px){
+
+    .skills-container{
+        grid-template-columns:repeat(4,1fr);
+    }
+
 }
 
-/* Hero Section */
-#hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+/* ===========================
+   TABLET
+=========================== */
+@media (min-width:768px) and (max-width:1023px){
+
+    header h1{
+        font-size:30px;
+    }
+
+    section{
+        width:95%;
+    }
+
+    .skills-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    body{
+        font-size:17px;
+    }
+
 }
 
-/* Skills using CSS Grid */
-.skills-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.skill{
-    background-color: #0d6efd;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.skill:hover{
-    background-color: #084298;
-    transform: scale(1.05);
-}
-
-/* Responsive Table */
-table{
-    display: block;
-    overflow-x: auto;
-}
-
-/* Mobile Responsive */
-@media (max-width:768px){
+/* ===========================
+   MOBILE
+=========================== */
+@media (max-width:767px){
 
     header{
         padding:15px;
@@ -196,18 +272,28 @@ table{
         font-size:24px;
     }
 
+    header p{
+        font-size:15px;
+    }
+
     nav{
-        flex-direction: column;
-        gap:10px;
+        flex-direction:column;
+        gap:8px;
+    }
+
+    nav a{
+        width:100%;
+        text-align:center;
     }
 
     section{
-        margin:10px;
+        width:95%;
+        margin:10px auto;
         padding:15px;
     }
 
     .skills-container{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns:1fr;
     }
 
     button,
@@ -216,20 +302,37 @@ table{
         width:100%;
         margin-bottom:10px;
     }
+
+    table{
+        font-size:14px;
+    }
+
 }
 
-/* Small Mobile */
+/* ===========================
+   SMALL MOBILE
+=========================== */
 @media (max-width:480px){
-
-    .skills-container{
-        grid-template-columns:1fr;
-    }
 
     header h1{
         font-size:20px;
     }
 
+    header p{
+        font-size:14px;
+    }
+
     h2{
         font-size:22px;
     }
+
+    p,
+    li{
+        font-size:15px;
+    }
+
+    .skills-container{
+        grid-template-columns:1fr;
+    }
+
 }
