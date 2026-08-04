@@ -451,3 +451,115 @@ footer{
     }
 
 }
+/* ===========================
+   DAY 9 - EXPERIENCE SECTION
+=========================== */
+
+#experience{
+    padding:50px 20px;
+}
+
+.experience-card{
+    background:#ffffff;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.experience-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(13,110,253,0.25);
+}
+
+.experience-card h3{
+    color:#0d6efd;
+    margin-bottom:8px;
+}
+
+.experience-card h4{
+    color:#555;
+    margin-bottom:10px;
+}
+
+.experience-card ul{
+    margin-top:10px;
+    margin-left:20px;
+}
+
+/* ===========================
+   DAY 9 - RESUME SECTION
+=========================== */
+
+#resume{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.resume-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#0d6efd;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.resume-btn:hover{
+    background:#084298;
+    transform:translateY(-3px);
+}
+
+/* ===========================
+   DAY 9 RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .experience-card{
+        padding:20px;
+    }
+
+    .resume-btn{
+        width:100%;
+        text-align:center;
+    }
+
+}
+/* ===== Skills Cards ===== */
+
+.skills-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.skill-card{
+    width:300px;
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    text-align:center;
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(13,110,253,0.25);
+}
+
+.skill-card h3{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.skill-card p{
+    color:#555;
+}
