@@ -16,11 +16,11 @@
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
+            <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#resume">Resume</a>
-            <a href="#education">Education</a>
             <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -51,6 +51,36 @@
                 internship and improving my HTML, CSS, Git, and GitHub skills.
                 My goal is to become a skilled Software Developer.
             </p>
+        </section>
+         <!-- Education -->
+        <section id="education">
+            <h2>Education</h2>
+
+            <table>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+
+                <tr>
+                    <td>B.Tech (Data Science)</td>
+                    <td>Aditya College of Engineering and Technology</td>
+                    <td>2024 - 2028</td>
+                </tr>
+
+                <tr>
+                    <td>Intermediate</td>
+                    <td>Aditya Junior College</td>
+                    <td>2022 - 2024</td>
+                </tr>
+
+                <tr>
+                    <td>SSC</td>
+                    <td>ZPP High School</td>
+                    <td>2022</td>
+                </tr>
+            </table>
         </section>
 
         <!-- Skills -->
@@ -148,36 +178,7 @@
     </a>
 </section>
 
-        <!-- Education -->
-        <section id="education">
-            <h2>Education</h2>
-
-            <table>
-                <tr>
-                    <th>Qualification</th>
-                    <th>Institution</th>
-                    <th>Year</th>
-                </tr>
-
-                <tr>
-                    <td>B.Tech (Data Science)</td>
-                    <td>Aditya College of Engineering and Technology</td>
-                    <td>2024 - 2028</td>
-                </tr>
-
-                <tr>
-                    <td>Intermediate</td>
-                    <td>Aditya Junior College</td>
-                    <td>2022 - 2024</td>
-                </tr>
-
-                <tr>
-                    <td>SSC</td>
-                    <td>ZPP High School</td>
-                    <td>2022</td>
-                </tr>
-            </table>
-        </section>
+       
 
         <!-- Certifications -->
         <section id="certifications">
@@ -192,36 +193,38 @@
             </div>
         </section>
 
-        <!-- Contact -->
         <section id="contact">
-            <h2>Contact Me</h2>
+    <h2>Contact Me</h2>
 
-            <form>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name">
 
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" placeholder="Enter your full name">
+        <input type="email" id="email" placeholder="Your Email">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Enter your email">
+        <input type="text" id="subject" placeholder="Subject">
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" placeholder="Enter your phone number">
+        <textarea id="message" rows="6" placeholder="Your Message"></textarea>
 
-                <label for="message">Message:</label>
-                <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+        <button type="submit">Send Message</button>
 
-                <input type="submit" value="Send">
-                <input type="reset" value="Reset">
+        <p id="successMessage"></p>
+    </form>
 
-            </form>
-        </section>
+    <div class="social-links">
+        <a href="https://github.com/divyanandhikolla" target="_blank">GitHub</a>
+
+        <a href="https://www.linkedin.com/in/divya-nandikolla-b720b1340" target="_blank">LinkedIn</a>
+
+        <a href="mailto:divyanandhikolla@gmail.com">Email</a>
+    </div>
+</section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Veera Sai Divya Nandikolla. All Rights Reserved.</p>
-        <p>Email: divyanandhikolla@gmail.com</p>
-    </footer>
+   <footer>
+    <p>&copy; 2026 Veera Sai Divya Nandikolla. All Rights Reserved.</p>
+    <p>Email: <a href="mailto:divyanandhikolla@gmail.com">divyanandhikolla@gmail.com</a></p>
+</footer>
 
     <!-- Scroll to Top Button -->
     <button id="topBtn">⬆ Top</button>

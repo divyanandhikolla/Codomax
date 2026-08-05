@@ -563,3 +563,77 @@ footer{
 .skill-card p{
     color:#555;
 }
+/* =========================
+   Contact Section
+========================= */
+
+#contact {
+    padding: 60px 10%;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 32px;
+    color: #2563eb;
+    margin-bottom: 30px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+#contact button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact button:hover {
+    background: #1d4ed8;
+}
+
+.social-links {
+    margin-top: 35px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #2563eb;
+    margin: 0 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    color: #1d4ed8;
+}
+
+#successMessage {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
