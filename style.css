@@ -29,6 +29,7 @@ header{
     color:white;
     text-align:center;
     padding:15px;
+    animation:fadeInUp 1s ease;
 }
 
 header h1{
@@ -75,6 +76,9 @@ section{
     background:white;
     border-radius:10px;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+    animation: fadeInUp 1s ease;
+    animation-fill-mode: both;
 }
 
 /* ===========================
@@ -614,26 +618,100 @@ footer{
 
 #contact button:hover {
     background: #1d4ed8;
+    transform:translateY(-3px);
+}
+/* ===== Contact Location ===== */
+
+.location{
+    text-align:center;
+    margin:20px 0;
+    color:#666;
+    font-size:17px;
+}
+.social-links{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
-.social-links {
-    margin-top: 35px;
+.social-links a{
+    display:inline-block;
+    width:160px;
+    text-align:center;
+    text-decoration:none;
+    color:#2563eb;
+    background:#ffffff;
+    padding:12px 20px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:600;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s ease;
 }
 
-.social-links a {
-    text-decoration: none;
-    color: #2563eb;
-    margin: 0 25px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.social-links a:hover {
-    color: #1d4ed8;
+.social-links a:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateY(-5px);
 }
 
 #successMessage {
     margin-top: 15px;
     color: green;
     font-weight: bold;
+}
+#contact h3{
+    color:#2563eb;
+    font-size:26px;
+    margin-top:25px;
+    margin-bottom:15px;
+}
+/* ===========================
+   DAY 11 ANIMATIONS
+=========================== */
+
+@keyframes fadeInUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+header{
+    animation:fadeInUp 1s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.skill-card:hover{
+    transform:translateY(-8px) scale(1.03);
+}
+
+.resume-btn:hover{
+    transform:scale(1.05);
+}
+
+.social-links a{
+    transition:0.3s ease;
+}
+
+.social-links a:hover{
+    transform:scale(1.2);
+}
+#home h2{
+    animation: fadeInUp 1.2s ease;
+}
+
+#home button:hover{
+    transform: scale(1.05);
 }
