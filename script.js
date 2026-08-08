@@ -1,14 +1,21 @@
 // View Profile Button
 document.getElementById("welcomeBtn").addEventListener("click", function () {
     document.getElementById("welcomeMessage").innerHTML =
-    "Welcome to my portfolio! Thank you for visiting.";
+        "Welcome to my portfolio! Thank you for visiting.";
+
+    document.getElementById("about").scrollIntoView({
+        behavior: "smooth"
+    });
 });
 
-// Change Heading Button
-document.getElementById("changeText").addEventListener("click", function () {
-    document.getElementById("heading").innerHTML =
-    "Welcome to My Portfolio 🚀";
+
+// Hire Me Button
+document.getElementById("hireBtn").addEventListener("click", function () {
+    document.getElementById("contact").scrollIntoView({
+        behavior: "smooth"
+    });
 });
+
 
 // Scroll to Top Button
 let topBtn = document.getElementById("topBtn");
@@ -27,8 +34,9 @@ topBtn.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
-// Contact Form Validation
 
+
+// Contact Form Validation
 const contactForm = document.getElementById("contactForm");
 
 contactForm.addEventListener("submit", function (e) {
@@ -56,5 +64,4 @@ contactForm.addEventListener("submit", function (e) {
         "✅ Message sent successfully!";
 
     contactForm.reset();
-
 });

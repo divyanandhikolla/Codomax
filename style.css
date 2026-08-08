@@ -198,24 +198,25 @@ textarea{
 }
 
 /* ===========================
-   BUTTONS
+BUTTONS
 =========================== */
+
 button,
 input[type="submit"],
-input[type="reset"]{
-    background:#0d6efd;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:5px;
-    cursor:pointer;
-    transition:0.3s;
+input[type="reset"] {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover,
 input[type="submit"]:hover,
-input[type="reset"]:hover{
-    background:#084298;
+input[type="reset"]:hover {
+    background: #084298;
 }
 
 /* ===========================
@@ -243,7 +244,7 @@ footer{
 /* ===========================
    TABLET
 =========================== */
-@media (min-width:768px) and (max-width:1023px){
+ @media (min-width:768px) and (max-width:1023px){
 
     header h1{
         font-size:30px;
@@ -628,34 +629,35 @@ footer{
     color:#666;
     font-size:17px;
 }
-.social-links{
-    margin-top:25px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:20px;
-    flex-wrap:wrap;
+ .social-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.social-links a{
-    display:inline-block;
-    width:160px;
-    text-align:center;
-    text-decoration:none;
-    color:#2563eb;
-    background:#ffffff;
-    padding:12px 20px;
-    border-radius:10px;
-    font-size:18px;
-    font-weight:600;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
-    transition:0.3s ease;
+.social-links a {
+    display: inline-block;
+    width: 160px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: #2563eb;
+    background: #ffffff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
 }
 
-.social-links a:hover{
-    background:#2563eb;
-    color:white;
-    transform:translateY(-5px);
+.social-links a:hover {
+    background: #2563eb;
+    color: white;
+    transform: scale(1.05);
 }
 
 #successMessage {
